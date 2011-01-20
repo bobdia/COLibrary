@@ -1,0 +1,1 @@
+<?php// TODO// http://duckduckgo.com/params.htmlclass DuckDuckGoSearch extends HttpReq {	public $data;		public $query;	public $url = 'http://duckduckgo.com/';	public function __construct($query) {		$this->query = $query;	}		protected function before() {		$this->args['q'] = $this->query;	}		public function success() {			}	}?>
